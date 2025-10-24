@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SuccessMessage from "../components/SuccessMessage";
+---
+<BaseLayout title="Submission Successful">
+  <main class="min-h-screen flex items-center justify-center p-4">
+    <div class="w-full max-w-xl">
+      <SuccessMessage client:load />
+      <div class="mt-6 flex justify-center">
+        <a
+          href="/"
+          class="rounded-lg border border-[#262626] bg-transparent text-white px-4 py-2 transition hover:border-[#cdf140] hover:text-[#cdf140]"
+        >
+          Back to form
+        </a>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
